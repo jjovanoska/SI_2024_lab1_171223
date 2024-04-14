@@ -1,0 +1,67 @@
+4. mkdir SI_2024_lab1_171223
+cd SI_2024_lab1_171223
+git init
+5.  git remote add origin https://github.com/jjovanoska/SI_2024_lab1_171223.git
+6. vi README.md
+git add README.me
+git commt -m "Initial commit"
+7. vi SILab1Main.java
+vi SILab1_1.java
+vi SILab1_2.java
+git add .
+git commit -m "Add starter code"
+8.git push origin --all
+vi SILab1_1.java
+vi SILab1_2.java
+9.git checkout -b bug1
+git checkout -b bug2
+10.git checkout bug1
+11.vi SILab1_1.java
+git add SILab1_1.java
+git commit -m "Fix wrong condition in filterOddLenghtStrings"
+12. git checkout bug2
+13.git add SILab1_2.java
+git commit -m "Fix wrong condition in makeBigStringFrom"
+14.git checkout bug1
+15.vi SILab1Main.java
+git add SILab1Main.java
+$ git commit -m "Call method filterOddLenghtStrings in main class."
+16.git checkout bug2
+17.vi SILab1Main.java
+git add SILab1Main.java
+git commit -m "Call method makeBigStringForm in main class."
+18.  git checkout bug1
+git push -u origin bug1
+git checkout bug2
+git push -u origin bug2
+19.git checkout master
+20.git merge bug1
+21.git checkout bug1
+git push -u origin bug1
+git checkout bug2
+git push -u origin bug2
+git checkout master
+git push -u origin master
+22. git checkout bug2
+23. Направете rebase спрема гранката master.
+24.git checkout master
+25. git merge bug2
+vi SILab1Main.java
+git add SILab1Main.java
+git commit -m "Resolve merge conflict in SILab1Main.java"
+26. git push -u origin bug1
+git push -u origin bug2
+git push -u origin master
+27.git push -u origin bug2 --force
+28. vi logs.txt
+ vi 171223.txt
+ git add logs.txt
+ git commit -m "Add logs.txt"
+ git add 171223.txt
+ git commit -m "Add 171223.txt"
+29. git push origin master
+
+
+
+
+
