@@ -1,0 +1,1714 @@
+
+jovan@Jovana-sPC MINGW64 ~
+$ pwd
+/c/Users/jovan
+
+jovan@Jovana-sPC MINGW64 ~
+$ cd Desktop/
+
+jovan@Jovana-sPC MINGW64 ~/Desktop
+$ cd SI_2024_lab1_171223/
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (bug3)
+$ git init
+Reinitialized existing Git repository in C:/Users/jovan/Desktop/SI_2024_lab1_171223/.git/
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (bug3)
+$ git remote add origin https://github.com/jjovanoska/SI_2024_lab1_171223.git
+error: remote origin already exists.
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (bug3)
+$ git add README.md
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (bug3)
+$ git commit -m "Initial commit"
+On branch bug3
+Your branch is up to date with 'origin/bug3'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        logs.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (bug3)
+$ rm logs.txt
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (bug3)
+$ ll
+total 5
+-rw-r--r-- 1 jovan 197609   25 Apr 14 17:50 README.md
+-rw-r--r-- 1 jovan 197609 1003 Apr 14 18:03 SILab1.java
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (bug3)
+$ rm SILab1.java
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (bug3)
+$ git status
+On branch bug3
+Your branch is up to date with 'origin/bug3'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    SILab1.java
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (bug3)
+$ git add README.md
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (bug3)
+$ git commit -m "Initial commit"
+On branch bug3
+Your branch is up to date with 'origin/bug3'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    SILab1.java
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (bug3)
+$ git branch -d bug3
+error: cannot delete branch 'bug3' used by worktree at 'C:/Users/jovan/Desktop/SI_2024_lab1_171223'
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (bug3)
+$ git branch -d bug3 --force
+error: cannot delete branch 'bug3' used by worktree at 'C:/Users/jovan/Desktop/SI_2024_lab1_171223'
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (bug3)
+$ git branch -D bug3
+error: cannot delete branch 'bug3' used by worktree at 'C:/Users/jovan/Desktop/SI_2024_lab1_171223'
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (bug3)
+$ git rm -r --cached .
+rm 'README.md'
+rm 'SILab1.java'
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (bug3)
+$ rm -rf /path/to/your/repo
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (bug3)
+$ git branch
+  bug1
+  bug2
+* bug3
+  master
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (bug3)
+$ git checkout master
+Switched to branch 'master'
+D       README.md
+D       SILab1.java
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (master)
+$ git commit -m "deleted"
+[master 10292d3] deleted
+ 2 files changed, 42 deletions(-)
+ delete mode 100644 README.md
+ delete mode 100644 SILab1.java
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (master)
+$ git branch -D bug1
+Deleted branch bug1 (was 9a12289).
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (master)
+$ git branch -D bug2
+Deleted branch bug2 (was 7bf134d).
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (master)
+$ git branch -D bug3
+Deleted branch bug3 (was 7bf134d).
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        README.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (master)
+$ git branch
+* master
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/jovan/Desktop/SI_2024_lab1_171223/.git/
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (master)
+$ git remote add origin https://github.com/jjovanoska/SI_2024_lab1_171223.git
+error: remote origin already exists.
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (master)
+$
+jovan@Jovana-sPC MINGW64 ~
+$ pwd
+/c/Users/jovan
+
+jovan@Jovana-sPC MINGW64 ~
+$ cd Desktop/
+
+jovan@Jovana-sPC MINGW64 ~/Desktop
+$ cd SI_2024_lab1_171223/
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (bug3)
+$ git init
+Reinitialized existing Git repository in C:/Users/jovan/Desktop/SI_2024_lab1_171223/.git/
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (bug3)
+$ git remote add origin https://github.com/jjovanoska/SI_2024_lab1_171223.git
+error: remote origin already exists.
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (bug3)
+$ git add README.md
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (bug3)
+git ^Cnges added to commit (use "git add" and/or "git commit -a")ctory)rack)
+
+
+
+
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (master)
+$ ^C
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (master)
+$ ^C
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (master)
+$ ^C
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (master)
+$ git ls-remote --get-url origin
+https://github.com/jjovanoska/SI_2024_lab1_171223.git
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (master)
+$ history
+    1  git config --list
+    2  git config --globar user.name "Jovana Jovanoska"
+    3  git config --global user.name "Jovana Jovanoska"
+    4  pwd
+    5  cd Desktop/
+    6  mkdir SI_2024_lab1_171223
+    7  cd SI_2024_lab1_171223/
+    8  git init
+    9  git remote add origin https://github.com/jjovanoska/SI_2024_lab1_171223.git
+   10  vi README.md
+   11  git status
+   12  git add README.md
+   13  git commit -m "Initial commit"
+   14  git config --global user.name "Jovana Jovanoska"
+   15  vi SILab1.java
+   16  git add SILab1.java
+   17  git commit -m "Add java class"
+   18  git config --global user.name "Jovana Jovanoska"
+   19  git commit -m "Add java class"
+   20  git config --global user.email "jovana.jovanoska@yahoo.com"
+   21  git commit -m "Add java class"
+   22  git push -u origin master
+   23  git config --global user.email "jovana.jovanoska@yahoo.com"
+   24  git remote add origin https://github.com/jjovanoska/SI_2024_lab1_171223.git
+   25  git push -u origin master
+   26  git status
+   27  git push -u origin master
+   28  git pull
+   29  git status
+   30  pef
+   31  pwd
+   32  git init
+   33  git remote add origin https://github.com/jjovanoska/SI_2024_lab1_171223.git
+   34  git pull
+   35  git remote add origin https://github.com/jjovanoska/SI_2024_lab1_171223.git
+   36  ll
+   37  git add README.md
+   38  git status
+   39  pwd
+   40  git Desktop/
+   41  cd Desktop/
+   42  cd SI_2024_lab1_171223/
+   43  git init
+   44  git remote add origin https://github.com/jjovanoska/SI_2024_lab1_171223.git
+   45  git status
+   46  vi README.md
+   47  git status
+   48  git add README.md
+   49  git commit -m "Initial commit"
+   50  vi SILab1.java
+   51  git add SILab1.java
+   52  git status
+   53  git commit -m "Add java class."
+   54  git push origin master
+   55  git branch bug1
+   56  git branch bug2
+   57  git branch bug3
+   58  git checkout bug1
+   59  vi SILab1.java
+   60  vi SILab1.java
+   61  git branch
+   62  git commit -m "Fix wrong loop for reading."
+   63  git checkout bug2
+   64  git commit -a -m " Fix wrong condition in filterOddNumbers."
+   65  git checkout bug3
+   66  git commit -a -m "Fix method sumEvenNumbers"
+   67  git branch
+   68  git checkout master
+   69  git checkout bug3
+   70  vi SILab1.java
+   71  git commit -a -m "Fix method sumEvenNumbers"
+   72  git checkout bug1
+   73  git push -u origin bug1
+   74  git checkout bug2
+   75  git push -u origin bug2
+   76  git checkout bug3
+   77  git push -u origin bug3
+   78  git checkout master
+   79  git merge bug1
+   80  git merge bug1
+   81  git push origin master
+   82  git merge bug2
+   83  git branch
+   84  git push origin master
+   85  git checkout bug3
+   86  git rebase master
+   87  git checkout master
+   88  git merge bug3
+   89  git checkout bug3
+   90  git push --force origin bug3
+   91  git add logs.txt
+   92  vi logs.txt
+   93  vi logs.txt
+   94  vi logs.txt
+   95  vi 171223.txt
+   96  pwd
+   97  cd Desktop/
+   98  cd SI_2024_lab1_171223/
+   99  git init
+  100  git remote add origin https://github.com/jjovanoska/SI_2024_lab1_171223.git
+  101  git add README.md
+  102  git commit -m "Initial commit"
+  103  rm logs.txt
+  104  ll
+  105  rm SILab1.java
+  106  git status
+  107  git add README.md
+  108  git commit -m "Initial commit"
+  109  git branch -d bug3
+  110  git branch -d bug3 --force
+  111  git branch -D bug3
+  112  git rm -r --cached .
+  113  rm -rf /path/to/your/repo
+  114  git branch
+  115  git checkout master
+  116  git commit -m "deleted"
+  117  git branch -D bug1
+  118  git branch -D bug2
+  119  git branch -D bug3
+  120  git status
+  121  git branch
+  122  git init
+  123  git remote add origin https://github.com/jjovanoska/SI_2024_lab1_171223.git
+  124  git ls-remote --get-url origin
+  125  history
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (master)
+$ vi README.md
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (master)
+$ git add README.md
+warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (master)
+$ git commit -m "Initial commit"
+[master b399c63] Initial commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (master)
+$ vi SILab1Main.java
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (master)
+$ vi SILab1_1.java
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (master)
+$ vi SILab1_2.java
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (master)
+$ history
+    1  git config --list
+    2  git config --globar user.name "Jovana Jovanoska"
+    3  git config --global user.name "Jovana Jovanoska"
+    4  pwd
+    5  cd Desktop/
+    6  mkdir SI_2024_lab1_171223
+    7  cd SI_2024_lab1_171223/
+    8  git init
+    9  git remote add origin https://github.com/jjovanoska/SI_2024_lab1_171223.git
+   10  vi README.md
+   11  git status
+   12  git add README.md
+   13  git commit -m "Initial commit"
+   14  git config --global user.name "Jovana Jovanoska"
+   15  vi SILab1.java
+   16  git add SILab1.java
+   17  git commit -m "Add java class"
+   18  git config --global user.name "Jovana Jovanoska"
+   19  git commit -m "Add java class"
+   20  git config --global user.email "jovana.jovanoska@yahoo.com"
+   21  git commit -m "Add java class"
+   22  git push -u origin master
+   23  git config --global user.email "jovana.jovanoska@yahoo.com"
+   24  git remote add origin https://github.com/jjovanoska/SI_2024_lab1_171223.git
+   25  git push -u origin master
+   26  git status
+   27  git push -u origin master
+   28  git pull
+   29  git status
+   30  pef
+   31  pwd
+   32  git init
+   33  git remote add origin https://github.com/jjovanoska/SI_2024_lab1_171223.git
+   34  git pull
+   35  git remote add origin https://github.com/jjovanoska/SI_2024_lab1_171223.git
+   36  ll
+   37  git add README.md
+   38  git status
+   39  pwd
+   40  git Desktop/
+   41  cd Desktop/
+   42  cd SI_2024_lab1_171223/
+   43  git init
+   44  git remote add origin https://github.com/jjovanoska/SI_2024_lab1_171223.git
+   45  git status
+   46  vi README.md
+   47  git status
+   48  git add README.md
+   49  git commit -m "Initial commit"
+   50  vi SILab1.java
+   51  git add SILab1.java
+   52  git status
+   53  git commit -m "Add java class."
+   54  git push origin master
+   55  git branch bug1
+   56  git branch bug2
+   57  git branch bug3
+   58  git checkout bug1
+   59  vi SILab1.java
+   60  vi SILab1.java
+   61  git branch
+   62  git commit -m "Fix wrong loop for reading."
+   63  git checkout bug2
+   64  git commit -a -m " Fix wrong condition in filterOddNumbers."
+   65  git checkout bug3
+   66  git commit -a -m "Fix method sumEvenNumbers"
+   67  git branch
+   68  git checkout master
+   69  git checkout bug3
+   70  vi SILab1.java
+   71  git commit -a -m "Fix method sumEvenNumbers"
+   72  git checkout bug1
+   73  git push -u origin bug1
+   74  git checkout bug2
+   75  git push -u origin bug2
+   76  git checkout bug3
+   77  git push -u origin bug3
+   78  git checkout master
+   79  git merge bug1
+   80  git merge bug1
+   81  git push origin master
+   82  git merge bug2
+   83  git branch
+   84  git push origin master
+   85  git checkout bug3
+   86  git rebase master
+   87  git checkout master
+   88  git merge bug3
+   89  git checkout bug3
+   90  git push --force origin bug3
+   91  git add logs.txt
+   92  vi logs.txt
+   93  vi logs.txt
+   94  vi logs.txt
+   95  vi 171223.txt
+   96  pwd
+   97  cd Desktop/
+   98  cd SI_2024_lab1_171223/
+   99  git init
+  100  git remote add origin https://github.com/jjovanoska/SI_2024_lab1_171223.git
+  101  git add README.md
+  102  git commit -m "Initial commit"
+  103  rm logs.txt
+  104  ll
+  105  rm SILab1.java
+  106  git status
+  107  git add README.md
+  108  git commit -m "Initial commit"
+  109  git branch -d bug3
+  110  git branch -d bug3 --force
+  111  git branch -D bug3
+  112  git rm -r --cached .
+  113  rm -rf /path/to/your/repo
+  114  git branch
+  115  git checkout master
+  116  git commit -m "deleted"
+  117  git branch -D bug1
+  118  git branch -D bug2
+  119  git branch -D bug3
+  120  git status
+  121  git branch
+  122  git init
+  123  git remote add origin https://github.com/jjovanoska/SI_2024_lab1_171223.git
+  124  git ls-remote --get-url origin
+  125  history
+  126  vi README.md
+  127  git add README.md
+  128  git commit -m "Initial commit"
+  129  vi SILab1Main.java
+  130  vi SILab1_1.java
+  131  vi SILab1_2.java
+  132  history
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (master)
+$ git add .
+warning: in the working copy of 'SILab1Main.java', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'SILab1_1.java', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'SILab1_2.java', LF will be replaced by CRLF the next time Git touches it
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (master)
+$ git commit -m "Add starter code"
+[master 38a8dc8] Add starter code
+ 3 files changed, 47 insertions(+)
+ create mode 100644 SILab1Main.java
+ create mode 100644 SILab1_1.java
+ create mode 100644 SILab1_2.java
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (master)
+$ history
+    1  git config --list
+    2  git config --globar user.name "Jovana Jovanoska"
+    3  git config --global user.name "Jovana Jovanoska"
+    4  pwd
+    5  cd Desktop/
+    6  mkdir SI_2024_lab1_171223
+    7  cd SI_2024_lab1_171223/
+    8  git init
+    9  git remote add origin https://github.com/jjovanoska/SI_2024_lab1_171223.git
+   10  vi README.md
+   11  git status
+   12  git add README.md
+   13  git commit -m "Initial commit"
+   14  git config --global user.name "Jovana Jovanoska"
+   15  vi SILab1.java
+   16  git add SILab1.java
+   17  git commit -m "Add java class"
+   18  git config --global user.name "Jovana Jovanoska"
+   19  git commit -m "Add java class"
+   20  git config --global user.email "jovana.jovanoska@yahoo.com"
+   21  git commit -m "Add java class"
+   22  git push -u origin master
+   23  git config --global user.email "jovana.jovanoska@yahoo.com"
+   24  git remote add origin https://github.com/jjovanoska/SI_2024_lab1_171223.git
+   25  git push -u origin master
+   26  git status
+   27  git push -u origin master
+   28  git pull
+   29  git status
+   30  pef
+   31  pwd
+   32  git init
+   33  git remote add origin https://github.com/jjovanoska/SI_2024_lab1_171223.git
+   34  git pull
+   35  git remote add origin https://github.com/jjovanoska/SI_2024_lab1_171223.git
+   36  ll
+   37  git add README.md
+   38  git status
+   39  pwd
+   40  git Desktop/
+   41  cd Desktop/
+   42  cd SI_2024_lab1_171223/
+   43  git init
+   44  git remote add origin https://github.com/jjovanoska/SI_2024_lab1_171223.git
+   45  git status
+   46  vi README.md
+   47  git status
+   48  git add README.md
+   49  git commit -m "Initial commit"
+   50  vi SILab1.java
+   51  git add SILab1.java
+   52  git status
+   53  git commit -m "Add java class."
+   54  git push origin master
+   55  git branch bug1
+   56  git branch bug2
+   57  git branch bug3
+   58  git checkout bug1
+   59  vi SILab1.java
+   60  vi SILab1.java
+   61  git branch
+   62  git commit -m "Fix wrong loop for reading."
+   63  git checkout bug2
+   64  git commit -a -m " Fix wrong condition in filterOddNumbers."
+   65  git checkout bug3
+   66  git commit -a -m "Fix method sumEvenNumbers"
+   67  git branch
+   68  git checkout master
+   69  git checkout bug3
+   70  vi SILab1.java
+   71  git commit -a -m "Fix method sumEvenNumbers"
+   72  git checkout bug1
+   73  git push -u origin bug1
+   74  git checkout bug2
+   75  git push -u origin bug2
+   76  git checkout bug3
+   77  git push -u origin bug3
+   78  git checkout master
+   79  git merge bug1
+   80  git merge bug1
+   81  git push origin master
+   82  git merge bug2
+   83  git branch
+   84  git push origin master
+   85  git checkout bug3
+   86  git rebase master
+   87  git checkout master
+   88  git merge bug3
+   89  git checkout bug3
+   90  git push --force origin bug3
+   91  git add logs.txt
+   92  vi logs.txt
+   93  vi logs.txt
+   94  vi logs.txt
+   95  vi 171223.txt
+   96  pwd
+   97  cd Desktop/
+   98  cd SI_2024_lab1_171223/
+   99  git init
+  100  git remote add origin https://github.com/jjovanoska/SI_2024_lab1_171223.git
+  101  git add README.md
+  102  git commit -m "Initial commit"
+  103  rm logs.txt
+  104  ll
+  105  rm SILab1.java
+  106  git status
+  107  git add README.md
+  108  git commit -m "Initial commit"
+  109  git branch -d bug3
+  110  git branch -d bug3 --force
+  111  git branch -D bug3
+  112  git rm -r --cached .
+  113  rm -rf /path/to/your/repo
+  114  git branch
+  115  git checkout master
+  116  git commit -m "deleted"
+  117  git branch -D bug1
+  118  git branch -D bug2
+  119  git branch -D bug3
+  120  git status
+  121  git branch
+  122  git init
+  123  git remote add origin https://github.com/jjovanoska/SI_2024_lab1_171223.git
+  124  git ls-remote --get-url origin
+  125  history
+  126  vi README.md
+  127  git add README.md
+  128  git commit -m "Initial commit"
+  129  vi SILab1Main.java
+  130  vi SILab1_1.java
+  131  vi SILab1_2.java
+  132  history
+  133  git add .
+  134  git commit -m "Add starter code"
+  135  history
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (master)
+$ git push origin --all
+Enumerating objects: 23, done.
+Counting objects: 100% (23/23), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (18/18), done.
+Writing objects: 100% (23/23), 2.64 KiB | 899.00 KiB/s, done.
+Total 23 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (3/3), done.
+To https://github.com/jjovanoska/SI_2024_lab1_171223.git
+ * [new branch]      master -> master
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (master)
+$ vi SILab1_
+SILab1_1.java  SILab1_2.java
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (master)
+$ vi SILab1_1.java
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (master)
+$ vi SILab1_1.java
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (master)
+$ vi SILab1_2.java
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (master)
+$ ^[[200~git checkout master
+bash: $'\E[200~git': command not found
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (master)
+$ git checkout master
+Already on 'master'
+M       SILab1_1.java
+M       SILab1_2.java
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (master)
+$ git checkout -b bug1
+Switched to a new branch 'bug1'
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (bug1)
+$ git checkout -b bug2
+Switched to a new branch 'bug2'
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (bug2)
+$ git checkout bug1
+Switched to branch 'bug1'
+M       SILab1_1.java
+M       SILab1_2.java
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (bug1)
+$ git branch
+* bug1
+  bug2
+  master
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (bug1)
+$ vi SILab1_1
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (bug1)
+$ vi SILab1_1.java
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (bug1)
+$ git add SILab1_1.java
+warning: in the working copy of 'SILab1_1.java', LF will be replaced by CRLF the next time Git touches it
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (bug1)
+$ git commit -m "Fix wrong condition in filterOddLenghtStrings"
+[bug1 4237503] Fix wrong condition in filterOddLenghtStrings
+ 1 file changed, 5 insertions(+), 10 deletions(-)
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (bug1)
+$ git checkout bug2
+Switched to branch 'bug2'
+M       SILab1_2.java
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (bug2)
+$ vi SILab1_2.java
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (bug2)
+$ git add SILab1_2.java
+warning: in the working copy of 'SILab1_2.java', LF will be replaced by CRLF the next time Git touches it
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (bug2)
+$ git commit -m "Fix wrong condition in makeBigStringFrom"
+[bug2 ece85b0] Fix wrong condition in makeBigStringFrom
+ 1 file changed, 7 insertions(+), 9 deletions(-)
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (bug2)
+$ git checkout bug1
+Switched to branch 'bug1'
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (bug1)
+$ vi SILab1Main.java
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (bug1)
+$ git add SILab1Main.java
+warning: in the working copy of 'SILab1Main.java', LF will be replaced by CRLF the next time Git touches it
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (bug1)
+$ git commit -m "Call method filterOddLenghtStrings in main class."
+[bug1 fcecce3] Call method filterOddLenghtStrings in main class.
+ 1 file changed, 1 insertion(+)
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (bug1)
+$ git checkout bug2
+Switched to branch 'bug2'
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (bug2)
+$ vi SILab1Main.java
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (bug2)
+$ git add SILab1Main.java
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (bug2)
+$ git commit -m "Call method makeBigStringForm in main class."
+[bug2 dcbce9e] Call method makeBigStringForm in main class.
+ 1 file changed, 1 insertion(+)
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (bug2)
+$ history
+    1  git config --list
+    2  git config --globar user.name "Jovana Jovanoska"
+    3  git config --global user.name "Jovana Jovanoska"
+    4  pwd
+    5  cd Desktop/
+    6  mkdir SI_2024_lab1_171223
+    7  cd SI_2024_lab1_171223/
+    8  git init
+    9  git remote add origin https://github.com/jjovanoska/SI_2024_lab1_171223.git
+   10  vi README.md
+   11  git status
+   12  git add README.md
+   13  git commit -m "Initial commit"
+   14  git config --global user.name "Jovana Jovanoska"
+   15  vi SILab1.java
+   16  git add SILab1.java
+   17  git commit -m "Add java class"
+   18  git config --global user.name "Jovana Jovanoska"
+   19  git commit -m "Add java class"
+   20  git config --global user.email "jovana.jovanoska@yahoo.com"
+   21  git commit -m "Add java class"
+   22  git push -u origin master
+   23  git config --global user.email "jovana.jovanoska@yahoo.com"
+   24  git remote add origin https://github.com/jjovanoska/SI_2024_lab1_171223.git
+   25  git push -u origin master
+   26  git status
+   27  git push -u origin master
+   28  git pull
+   29  git status
+   30  pef
+   31  pwd
+   32  git init
+   33  git remote add origin https://github.com/jjovanoska/SI_2024_lab1_171223.git
+   34  git pull
+   35  git remote add origin https://github.com/jjovanoska/SI_2024_lab1_171223.git
+   36  ll
+   37  git add README.md
+   38  git status
+   39  pwd
+   40  git Desktop/
+   41  cd Desktop/
+   42  cd SI_2024_lab1_171223/
+   43  git init
+   44  git remote add origin https://github.com/jjovanoska/SI_2024_lab1_171223.git
+   45  git status
+   46  vi README.md
+   47  git status
+   48  git add README.md
+   49  git commit -m "Initial commit"
+   50  vi SILab1.java
+   51  git add SILab1.java
+   52  git status
+   53  git commit -m "Add java class."
+   54  git push origin master
+   55  git branch bug1
+   56  git branch bug2
+   57  git branch bug3
+   58  git checkout bug1
+   59  vi SILab1.java
+   60  vi SILab1.java
+   61  git branch
+   62  git commit -m "Fix wrong loop for reading."
+   63  git checkout bug2
+   64  git commit -a -m " Fix wrong condition in filterOddNumbers."
+   65  git checkout bug3
+   66  git commit -a -m "Fix method sumEvenNumbers"
+   67  git branch
+   68  git checkout master
+   69  git checkout bug3
+   70  vi SILab1.java
+   71  git commit -a -m "Fix method sumEvenNumbers"
+   72  git checkout bug1
+   73  git push -u origin bug1
+   74  git checkout bug2
+   75  git push -u origin bug2
+   76  git checkout bug3
+   77  git push -u origin bug3
+   78  git checkout master
+   79  git merge bug1
+   80  git merge bug1
+   81  git push origin master
+   82  git merge bug2
+   83  git branch
+   84  git push origin master
+   85  git checkout bug3
+   86  git rebase master
+   87  git checkout master
+   88  git merge bug3
+   89  git checkout bug3
+   90  git push --force origin bug3
+   91  git add logs.txt
+   92  vi logs.txt
+   93  vi logs.txt
+   94  vi logs.txt
+   95  vi 171223.txt
+   96  pwd
+   97  cd Desktop/
+   98  cd SI_2024_lab1_171223/
+   99  git init
+  100  git remote add origin https://github.com/jjovanoska/SI_2024_lab1_171223.git
+  101  git add README.md
+  102  git commit -m "Initial commit"
+  103  rm logs.txt
+  104  ll
+  105  rm SILab1.java
+  106  git status
+  107  git add README.md
+  108  git commit -m "Initial commit"
+  109  git branch -d bug3
+  110  git branch -d bug3 --force
+  111  git branch -D bug3
+  112  git rm -r --cached .
+  113  rm -rf /path/to/your/repo
+  114  git branch
+  115  git checkout master
+  116  git commit -m "deleted"
+  117  git branch -D bug1
+  118  git branch -D bug2
+  119  git branch -D bug3
+  120  git status
+  121  git branch
+  122  git init
+  123  git remote add origin https://github.com/jjovanoska/SI_2024_lab1_171223.git
+  124  git ls-remote --get-url origin
+  125  history
+  126  vi README.md
+  127  git add README.md
+  128  git commit -m "Initial commit"
+  129  vi SILab1Main.java
+  130  vi SILab1_1.java
+  131  vi SILab1_2.java
+  132  history
+  133  git add .
+  134  git commit -m "Add starter code"
+  135  history
+  136  git push origin --all
+  137  vi SILab1_1.java
+  138  vi SILab1_1.java
+  139  vi SILab1_2.java
+  140  git checkout master
+  141  git checkout master
+  142  git checkout -b bug1
+  143  git checkout -b bug2
+  144  git checkout bug1
+  145  git branch
+  146  vi SILab1_1
+  147  vi SILab1_1.java
+  148  git add SILab1_1.java
+  149  git commit -m "Fix wrong condition in filterOddLenghtStrings"
+  150  git checkout bug2
+  151  vi SILab1_2.java
+  152  git add SILab1_2.java
+  153  git commit -m "Fix wrong condition in makeBigStringFrom"
+  154  git checkout bug1
+  155  vi SILab1Main.java
+  156  git add SILab1Main.java
+  157  git commit -m "Call method filterOddLenghtStrings in main class."
+  158  git checkout bug2
+  159  vi SILab1Main.java
+  160  git add SILab1Main.java
+  161  git commit -m "Call method makeBigStringForm in main class."
+  162  history
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (bug2)
+$ git checkout bug1
+Switched to branch 'bug1'
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (bug1)
+$ git push -u origin bug1
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 861 bytes | 861.00 KiB/s, done.
+Total 6 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+remote:
+remote: Create a pull request for 'bug1' on GitHub by visiting:
+remote:      https://github.com/jjovanoska/SI_2024_lab1_171223/pull/new/bug1
+remote:
+To https://github.com/jjovanoska/SI_2024_lab1_171223.git
+ * [new branch]      bug1 -> bug1
+branch 'bug1' set up to track 'origin/bug1'.
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (bug1)
+$ git checkout bug2
+Switched to branch 'bug2'
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (bug2)
+$ git push -u origin bug2
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 816 bytes | 816.00 KiB/s, done.
+Total 6 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (3/3), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'bug2' on GitHub by visiting:
+remote:      https://github.com/jjovanoska/SI_2024_lab1_171223/pull/new/bug2
+remote:
+To https://github.com/jjovanoska/SI_2024_lab1_171223.git
+ * [new branch]      bug2 -> bug2
+branch 'bug2' set up to track 'origin/bug2'.
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (bug2)
+$ git checkout master
+Switched to branch 'master'
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (master)
+$ history
+    1  git config --list
+    2  git config --globar user.name "Jovana Jovanoska"
+    3  git config --global user.name "Jovana Jovanoska"
+    4  pwd
+    5  cd Desktop/
+    6  mkdir SI_2024_lab1_171223
+    7  cd SI_2024_lab1_171223/
+    8  git init
+    9  git remote add origin https://github.com/jjovanoska/SI_2024_lab1_171223.git
+   10  vi README.md
+   11  git status
+   12  git add README.md
+   13  git commit -m "Initial commit"
+   14  git config --global user.name "Jovana Jovanoska"
+   15  vi SILab1.java
+   16  git add SILab1.java
+   17  git commit -m "Add java class"
+   18  git config --global user.name "Jovana Jovanoska"
+   19  git commit -m "Add java class"
+   20  git config --global user.email "jovana.jovanoska@yahoo.com"
+   21  git commit -m "Add java class"
+   22  git push -u origin master
+   23  git config --global user.email "jovana.jovanoska@yahoo.com"
+   24  git remote add origin https://github.com/jjovanoska/SI_2024_lab1_171223.git
+   25  git push -u origin master
+   26  git status
+   27  git push -u origin master
+   28  git pull
+   29  git status
+   30  pef
+   31  pwd
+   32  git init
+   33  git remote add origin https://github.com/jjovanoska/SI_2024_lab1_171223.git
+   34  git pull
+   35  git remote add origin https://github.com/jjovanoska/SI_2024_lab1_171223.git
+   36  ll
+   37  git add README.md
+   38  git status
+   39  pwd
+   40  git Desktop/
+   41  cd Desktop/
+   42  cd SI_2024_lab1_171223/
+   43  git init
+   44  git remote add origin https://github.com/jjovanoska/SI_2024_lab1_171223.git
+   45  git status
+   46  vi README.md
+   47  git status
+   48  git add README.md
+   49  git commit -m "Initial commit"
+   50  vi SILab1.java
+   51  git add SILab1.java
+   52  git status
+   53  git commit -m "Add java class."
+   54  git push origin master
+   55  git branch bug1
+   56  git branch bug2
+   57  git branch bug3
+   58  git checkout bug1
+   59  vi SILab1.java
+   60  vi SILab1.java
+   61  git branch
+   62  git commit -m "Fix wrong loop for reading."
+   63  git checkout bug2
+   64  git commit -a -m " Fix wrong condition in filterOddNumbers."
+   65  git checkout bug3
+   66  git commit -a -m "Fix method sumEvenNumbers"
+   67  git branch
+   68  git checkout master
+   69  git checkout bug3
+   70  vi SILab1.java
+   71  git commit -a -m "Fix method sumEvenNumbers"
+   72  git checkout bug1
+   73  git push -u origin bug1
+   74  git checkout bug2
+   75  git push -u origin bug2
+   76  git checkout bug3
+   77  git push -u origin bug3
+   78  git checkout master
+   79  git merge bug1
+   80  git merge bug1
+   81  git push origin master
+   82  git merge bug2
+   83  git branch
+   84  git push origin master
+   85  git checkout bug3
+   86  git rebase master
+   87  git checkout master
+   88  git merge bug3
+   89  git checkout bug3
+   90  git push --force origin bug3
+   91  git add logs.txt
+   92  vi logs.txt
+   93  vi logs.txt
+   94  vi logs.txt
+   95  vi 171223.txt
+   96  pwd
+   97  cd Desktop/
+   98  cd SI_2024_lab1_171223/
+   99  git init
+  100  git remote add origin https://github.com/jjovanoska/SI_2024_lab1_171223.git
+  101  git add README.md
+  102  git commit -m "Initial commit"
+  103  rm logs.txt
+  104  ll
+  105  rm SILab1.java
+  106  git status
+  107  git add README.md
+  108  git commit -m "Initial commit"
+  109  git branch -d bug3
+  110  git branch -d bug3 --force
+  111  git branch -D bug3
+  112  git rm -r --cached .
+  113  rm -rf /path/to/your/repo
+  114  git branch
+  115  git checkout master
+  116  git commit -m "deleted"
+  117  git branch -D bug1
+  118  git branch -D bug2
+  119  git branch -D bug3
+  120  git status
+  121  git branch
+  122  git init
+  123  git remote add origin https://github.com/jjovanoska/SI_2024_lab1_171223.git
+  124  git ls-remote --get-url origin
+  125  history
+  126  vi README.md
+  127  git add README.md
+  128  git commit -m "Initial commit"
+  129  vi SILab1Main.java
+  130  vi SILab1_1.java
+  131  vi SILab1_2.java
+  132  history
+  133  git add .
+  134  git commit -m "Add starter code"
+  135  history
+  136  git push origin --all
+  137  vi SILab1_1.java
+  138  vi SILab1_1.java
+  139  vi SILab1_2.java
+  140  git checkout master
+  141  git checkout master
+  142  git checkout -b bug1
+  143  git checkout -b bug2
+  144  git checkout bug1
+  145  git branch
+  146  vi SILab1_1
+  147  vi SILab1_1.java
+  148  git add SILab1_1.java
+  149  git commit -m "Fix wrong condition in filterOddLenghtStrings"
+  150  git checkout bug2
+  151  vi SILab1_2.java
+  152  git add SILab1_2.java
+  153  git commit -m "Fix wrong condition in makeBigStringFrom"
+  154  git checkout bug1
+  155  vi SILab1Main.java
+  156  git add SILab1Main.java
+  157  git commit -m "Call method filterOddLenghtStrings in main class."
+  158  git checkout bug2
+  159  vi SILab1Main.java
+  160  git add SILab1Main.java
+  161  git commit -m "Call method makeBigStringForm in main class."
+  162  history
+  163  git checkout bug1
+  164  git push -u origin bug1
+  165  git checkout bug2
+  166  git push -u origin bug2
+  167  git checkout master
+  168  history
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (master)
+$ git branch
+  bug1
+  bug2
+* master
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (master)
+$ git merge bug1
+Updating 38a8dc8..fcecce3
+Fast-forward
+ SILab1Main.java |  1 +
+ SILab1_1.java   | 15 +++++----------
+ 2 files changed, 6 insertions(+), 10 deletions(-)
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (master)
+$ git checkout bug1
+Switched to branch 'bug1'
+Your branch is up to date with 'origin/bug1'.
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (bug1)
+$ git push -u origin bug1
+Everything up-to-date
+branch 'bug1' set up to track 'origin/bug1'.
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (bug1)
+$ git checkout bug2
+Switched to branch 'bug2'
+Your branch is up to date with 'origin/bug2'.
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (bug2)
+$ git push -u origin bug2
+Everything up-to-date
+branch 'bug2' set up to track 'origin/bug2'.
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (bug2)
+$ git push -u origin master
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/jjovanoska/SI_2024_lab1_171223.git
+   38a8dc8..fcecce3  master -> master
+branch 'master' set up to track 'origin/master'.
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (bug2)
+$ git branch bug2
+fatal: a branch named 'bug2' already exists
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (bug2)
+$ git checkout bug
+error: pathspec 'bug' did not match any file(s) known to git
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (bug2)
+$ git checkout bug2
+Already on 'bug2'
+Your branch is up to date with 'origin/bug2'.
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (bug2)
+$ git merge bug2
+Already up to date.
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (bug2)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (master)
+$ git merge bug2
+Auto-merging SILab1Main.java
+CONFLICT (content): Merge conflict in SILab1Main.java
+Automatic merge failed; fix conflicts and then commit the result.
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (master|MERGING)
+$ vi SILab1Main.java
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (master|MERGING)
+$ git add SILab1Main.java
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (master|MERGING)
+$ git commit -m "Resolve merge conflict in SILab1Main.java"
+[master 6642380] Resolve merge conflict in SILab1Main.java
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (master)
+$ git checkout master
+Already on 'master'
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (master)
+$ git merge bug2
+Already up to date.
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (master)
+$ git merge bug2
+Already up to date.
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (master)
+$ git checkout master
+Already on 'master'
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (master)
+$ git merge bug2
+Already up to date.
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (master)
+$ git checkout bug2
+Switched to branch 'bug2'
+Your branch is up to date with 'origin/bug2'.
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (bug2)
+$ git checkout master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (master)
+$ git merge bug2
+Already up to date.
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (master)
+$ git merge bug2
+Already up to date.
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (master)
+$ history
+    1  git config --list
+    2  git config --globar user.name "Jovana Jovanoska"
+    3  git config --global user.name "Jovana Jovanoska"
+    4  pwd
+    5  cd Desktop/
+    6  mkdir SI_2024_lab1_171223
+    7  cd SI_2024_lab1_171223/
+    8  git init
+    9  git remote add origin https://github.com/jjovanoska/SI_2024_lab1_171223.git
+   10  vi README.md
+   11  git status
+   12  git add README.md
+   13  git commit -m "Initial commit"
+   14  git config --global user.name "Jovana Jovanoska"
+   15  vi SILab1.java
+   16  git add SILab1.java
+   17  git commit -m "Add java class"
+   18  git config --global user.name "Jovana Jovanoska"
+   19  git commit -m "Add java class"
+   20  git config --global user.email "jovana.jovanoska@yahoo.com"
+   21  git commit -m "Add java class"
+   22  git push -u origin master
+   23  git config --global user.email "jovana.jovanoska@yahoo.com"
+   24  git remote add origin https://github.com/jjovanoska/SI_2024_lab1_171223.git
+   25  git push -u origin master
+   26  git status
+   27  git push -u origin master
+   28  git pull
+   29  git status
+   30  pef
+   31  pwd
+   32  git init
+   33  git remote add origin https://github.com/jjovanoska/SI_2024_lab1_171223.git
+   34  git pull
+   35  git remote add origin https://github.com/jjovanoska/SI_2024_lab1_171223.git
+   36  ll
+   37  git add README.md
+   38  git status
+   39  pwd
+   40  git Desktop/
+   41  cd Desktop/
+   42  cd SI_2024_lab1_171223/
+   43  git init
+   44  git remote add origin https://github.com/jjovanoska/SI_2024_lab1_171223.git
+   45  git status
+   46  vi README.md
+   47  git status
+   48  git add README.md
+   49  git commit -m "Initial commit"
+   50  vi SILab1.java
+   51  git add SILab1.java
+   52  git status
+   53  git commit -m "Add java class."
+   54  git push origin master
+   55  git branch bug1
+   56  git branch bug2
+   57  git branch bug3
+   58  git checkout bug1
+   59  vi SILab1.java
+   60  vi SILab1.java
+   61  git branch
+   62  git commit -m "Fix wrong loop for reading."
+   63  git checkout bug2
+   64  git commit -a -m " Fix wrong condition in filterOddNumbers."
+   65  git checkout bug3
+   66  git commit -a -m "Fix method sumEvenNumbers"
+   67  git branch
+   68  git checkout master
+   69  git checkout bug3
+   70  vi SILab1.java
+   71  git commit -a -m "Fix method sumEvenNumbers"
+   72  git checkout bug1
+   73  git push -u origin bug1
+   74  git checkout bug2
+   75  git push -u origin bug2
+   76  git checkout bug3
+   77  git push -u origin bug3
+   78  git checkout master
+   79  git merge bug1
+   80  git merge bug1
+   81  git push origin master
+   82  git merge bug2
+   83  git branch
+   84  git push origin master
+   85  git checkout bug3
+   86  git rebase master
+   87  git checkout master
+   88  git merge bug3
+   89  git checkout bug3
+   90  git push --force origin bug3
+   91  git add logs.txt
+   92  vi logs.txt
+   93  vi logs.txt
+   94  vi logs.txt
+   95  vi 171223.txt
+   96  pwd
+   97  cd Desktop/
+   98  cd SI_2024_lab1_171223/
+   99  git init
+  100  git remote add origin https://github.com/jjovanoska/SI_2024_lab1_171223.git
+  101  git add README.md
+  102  git commit -m "Initial commit"
+  103  rm logs.txt
+  104  ll
+  105  rm SILab1.java
+  106  git status
+  107  git add README.md
+  108  git commit -m "Initial commit"
+  109  git branch -d bug3
+  110  git branch -d bug3 --force
+  111  git branch -D bug3
+  112  git rm -r --cached .
+  113  rm -rf /path/to/your/repo
+  114  git branch
+  115  git checkout master
+  116  git commit -m "deleted"
+  117  git branch -D bug1
+  118  git branch -D bug2
+  119  git branch -D bug3
+  120  git status
+  121  git branch
+  122  git init
+  123  git remote add origin https://github.com/jjovanoska/SI_2024_lab1_171223.git
+  124  git ls-remote --get-url origin
+  125  history
+  126  vi README.md
+  127  git add README.md
+  128  git commit -m "Initial commit"
+  129  vi SILab1Main.java
+  130  vi SILab1_1.java
+  131  vi SILab1_2.java
+  132  history
+  133  git add .
+  134  git commit -m "Add starter code"
+  135  history
+  136  git push origin --all
+  137  vi SILab1_1.java
+  138  vi SILab1_1.java
+  139  vi SILab1_2.java
+  140  git checkout master
+  141  git checkout master
+  142  git checkout -b bug1
+  143  git checkout -b bug2
+  144  git checkout bug1
+  145  git branch
+  146  vi SILab1_1
+  147  vi SILab1_1.java
+  148  git add SILab1_1.java
+  149  git commit -m "Fix wrong condition in filterOddLenghtStrings"
+  150  git checkout bug2
+  151  vi SILab1_2.java
+  152  git add SILab1_2.java
+  153  git commit -m "Fix wrong condition in makeBigStringFrom"
+  154  git checkout bug1
+  155  vi SILab1Main.java
+  156  git add SILab1Main.java
+  157  git commit -m "Call method filterOddLenghtStrings in main class."
+  158  git checkout bug2
+  159  vi SILab1Main.java
+  160  git add SILab1Main.java
+  161  git commit -m "Call method makeBigStringForm in main class."
+  162  history
+  163  git checkout bug1
+  164  git push -u origin bug1
+  165  git checkout bug2
+  166  git push -u origin bug2
+  167  git checkout master
+  168  history
+  169  git branch
+  170  git merge bug1
+  171  git checkout bug1
+  172  git push -u origin bug1
+  173  git checkout bug2
+  174  git push -u origin bug2
+  175  git push -u origin master
+  176  git branch bug2
+  177  git checkout bug
+  178  git checkout bug2
+  179  git merge bug2
+  180  git checkout master
+  181  git merge bug2
+  182  vi SILab1Main.java
+  183  git add SILab1Main.java
+  184  git commit -m "Resolve merge conflict in SILab1Main.java"
+  185  git checkout master
+  186  git merge bug2
+  187  git merge bug2
+  188  git checkout master
+  189  git merge bug2
+  190  git checkout bug2
+  191  git checkout master
+  192  git merge bug2
+  193  git merge bug2
+  194  git status
+  195  history
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (master)
+$ git checkout bug2
+Switched to branch 'bug2'
+Your branch is up to date with 'origin/bug2'.
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (bug2)
+$ git rebase master
+Successfully rebased and updated refs/heads/bug2.
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (bug2)
+$ git checkout master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (master)
+$ git merge bug2
+Already up to date.
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (master)
+$ git push -u origin bug1
+Everything up-to-date
+branch 'bug1' set up to track 'origin/bug1'.
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (master)
+$ git push -u origin bug2
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 305 bytes | 305.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/jjovanoska/SI_2024_lab1_171223.git
+   dcbce9e..6642380  bug2 -> bug2
+branch 'bug2' set up to track 'origin/bug2'.
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (master)
+$ git push -u origin bug2 --force
+Everything up-to-date
+branch 'bug2' set up to track 'origin/bug2'.
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (master)
+$ history
+    1  git config --list
+    2  git config --globar user.name "Jovana Jovanoska"
+    3  git config --global user.name "Jovana Jovanoska"
+    4  pwd
+    5  cd Desktop/
+    6  mkdir SI_2024_lab1_171223
+    7  cd SI_2024_lab1_171223/
+    8  git init
+    9  git remote add origin https://github.com/jjovanoska/SI_2024_lab1_171223.git
+   10  vi README.md
+   11  git status
+   12  git add README.md
+   13  git commit -m "Initial commit"
+   14  git config --global user.name "Jovana Jovanoska"
+   15  vi SILab1.java
+   16  git add SILab1.java
+   17  git commit -m "Add java class"
+   18  git config --global user.name "Jovana Jovanoska"
+   19  git commit -m "Add java class"
+   20  git config --global user.email "jovana.jovanoska@yahoo.com"
+   21  git commit -m "Add java class"
+   22  git push -u origin master
+   23  git config --global user.email "jovana.jovanoska@yahoo.com"
+   24  git remote add origin https://github.com/jjovanoska/SI_2024_lab1_171223.git
+   25  git push -u origin master
+   26  git status
+   27  git push -u origin master
+   28  git pull
+   29  git status
+   30  pef
+   31  pwd
+   32  git init
+   33  git remote add origin https://github.com/jjovanoska/SI_2024_lab1_171223.git
+   34  git pull
+   35  git remote add origin https://github.com/jjovanoska/SI_2024_lab1_171223.git
+   36  ll
+   37  git add README.md
+   38  git status
+   39  pwd
+   40  git Desktop/
+   41  cd Desktop/
+   42  cd SI_2024_lab1_171223/
+   43  git init
+   44  git remote add origin https://github.com/jjovanoska/SI_2024_lab1_171223.git
+   45  git status
+   46  vi README.md
+   47  git status
+   48  git add README.md
+   49  git commit -m "Initial commit"
+   50  vi SILab1.java
+   51  git add SILab1.java
+   52  git status
+   53  git commit -m "Add java class."
+   54  git push origin master
+   55  git branch bug1
+   56  git branch bug2
+   57  git branch bug3
+   58  git checkout bug1
+   59  vi SILab1.java
+   60  vi SILab1.java
+   61  git branch
+   62  git commit -m "Fix wrong loop for reading."
+   63  git checkout bug2
+   64  git commit -a -m " Fix wrong condition in filterOddNumbers."
+   65  git checkout bug3
+   66  git commit -a -m "Fix method sumEvenNumbers"
+   67  git branch
+   68  git checkout master
+   69  git checkout bug3
+   70  vi SILab1.java
+   71  git commit -a -m "Fix method sumEvenNumbers"
+   72  git checkout bug1
+   73  git push -u origin bug1
+   74  git checkout bug2
+   75  git push -u origin bug2
+   76  git checkout bug3
+   77  git push -u origin bug3
+   78  git checkout master
+   79  git merge bug1
+   80  git merge bug1
+   81  git push origin master
+   82  git merge bug2
+   83  git branch
+   84  git push origin master
+   85  git checkout bug3
+   86  git rebase master
+   87  git checkout master
+   88  git merge bug3
+   89  git checkout bug3
+   90  git push --force origin bug3
+   91  git add logs.txt
+   92  vi logs.txt
+   93  vi logs.txt
+   94  vi logs.txt
+   95  vi 171223.txt
+   96  pwd
+   97  cd Desktop/
+   98  cd SI_2024_lab1_171223/
+   99  git init
+  100  git remote add origin https://github.com/jjovanoska/SI_2024_lab1_171223.git
+  101  git add README.md
+  102  git commit -m "Initial commit"
+  103  rm logs.txt
+  104  ll
+  105  rm SILab1.java
+  106  git status
+  107  git add README.md
+  108  git commit -m "Initial commit"
+  109  git branch -d bug3
+  110  git branch -d bug3 --force
+  111  git branch -D bug3
+  112  git rm -r --cached .
+  113  rm -rf /path/to/your/repo
+  114  git branch
+  115  git checkout master
+  116  git commit -m "deleted"
+  117  git branch -D bug1
+  118  git branch -D bug2
+  119  git branch -D bug3
+  120  git status
+  121  git branch
+  122  git init
+  123  git remote add origin https://github.com/jjovanoska/SI_2024_lab1_171223.git
+  124  git ls-remote --get-url origin
+  125  history
+  126  vi README.md
+  127  git add README.md
+  128  git commit -m "Initial commit"
+  129  vi SILab1Main.java
+  130  vi SILab1_1.java
+  131  vi SILab1_2.java
+  132  history
+  133  git add .
+  134  git commit -m "Add starter code"
+  135  history
+  136  git push origin --all
+  137  vi SILab1_1.java
+  138  vi SILab1_1.java
+  139  vi SILab1_2.java
+  140  git checkout master
+  141  git checkout master
+  142  git checkout -b bug1
+  143  git checkout -b bug2
+  144  git checkout bug1
+  145  git branch
+  146  vi SILab1_1
+  147  vi SILab1_1.java
+  148  git add SILab1_1.java
+  149  git commit -m "Fix wrong condition in filterOddLenghtStrings"
+  150  git checkout bug2
+  151  vi SILab1_2.java
+  152  git add SILab1_2.java
+  153  git commit -m "Fix wrong condition in makeBigStringFrom"
+  154  git checkout bug1
+  155  vi SILab1Main.java
+  156  git add SILab1Main.java
+  157  git commit -m "Call method filterOddLenghtStrings in main class."
+  158  git checkout bug2
+  159  vi SILab1Main.java
+  160  git add SILab1Main.java
+  161  git commit -m "Call method makeBigStringForm in main class."
+  162  history
+  163  git checkout bug1
+  164  git push -u origin bug1
+  165  git checkout bug2
+  166  git push -u origin bug2
+  167  git checkout master
+  168  history
+  169  git branch
+  170  git merge bug1
+  171  git checkout bug1
+  172  git push -u origin bug1
+  173  git checkout bug2
+  174  git push -u origin bug2
+  175  git push -u origin master
+  176  git branch bug2
+  177  git checkout bug
+  178  git checkout bug2
+  179  git merge bug2
+  180  git checkout master
+  181  git merge bug2
+  182  vi SILab1Main.java
+  183  git add SILab1Main.java
+  184  git commit -m "Resolve merge conflict in SILab1Main.java"
+  185  git checkout master
+  186  git merge bug2
+  187  git merge bug2
+  188  git checkout master
+  189  git merge bug2
+  190  git checkout bug2
+  191  git checkout master
+  192  git merge bug2
+  193  git merge bug2
+  194  git status
+  195  history
+  196  git checkout bug2
+  197  git rebase master
+  198  git checkout master
+  199  git merge bug2
+  200  git push -u origin bug1
+  201  git push -u origin bug2
+  202  git push -u origin bug2 --force
+  203  history
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (master)
+$ git push -u origin master
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/jjovanoska/SI_2024_lab1_171223.git
+   fcecce3..6642380  master -> master
+branch 'master' set up to track 'origin/master'.
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (master)
+$ vi logs.txt
+
+jovan@Jovana-sPC MINGW64 ~/Desktop/SI_2024_lab1_171223 (master)
+$
+
